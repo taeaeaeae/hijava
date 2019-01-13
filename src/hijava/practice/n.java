@@ -4,7 +4,13 @@ public class n {
 
 		int a = 33;
 		int b = 22;
-
+		
+//		public void swap2() {
+//		int c = 1;
+//		c = a;
+//		a = b;
+//		b = c;
+//		}77
 		
 		public void swap() {
 			a = a+b;
