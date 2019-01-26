@@ -1,7 +1,7 @@
 package hijava.practice;
 
 public class st1 {
-	
+
 	public static void main(String[] args) {
 		int line = 7;
 		for (int i = 1; i <= line; i++) {

@@ -11,7 +11,7 @@ public class Moo {
 			for (int k = 2; k < i; k++) {
 				if (i % k == 0) {
 					isPrime = false;
-	                break;
+					break;
 				}
 			}
 
