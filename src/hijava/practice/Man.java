@@ -18,7 +18,7 @@ public class Man {
 
 	public void buyCoffee(int count) {
 //		this.amount = this.amount - 3000 *count;
-//		this.amount -= COFFEE * count;
+		this.amount -= COFFEE * count;
 		this.subAmount(COFFEE, count);
 	}
 
@@ -50,7 +50,7 @@ public class Man {
 	}
 	@Override
 	public String toString() {
-		return "Man [name=" + name + ", amount=" + amount + "]";
+		return name + "님의 잔액은 " + amount +  "원 입니다";
 	}
 
 	public static void main(String[] args) {

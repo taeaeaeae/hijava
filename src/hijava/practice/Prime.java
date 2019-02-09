@@ -1,28 +1,39 @@
 package hijava.practice;
 
+import java.util.ArrayList;
+
 public class Prime {
 
 	public static void main(String[] args) {
-		Integer i[] = new Intger[] {1,2,3};
-		int[] ii = new int
-
-		int total = 0;
-
-		for (int num = 2; num <= 100; num++) {
-			boolean isPrimeNum = true;
-			for (int j = 2; j < num; j++) {
-				if (num % j == 0) {
-					isPrimeNum = false;
-					break;
-				}
+		if (args.length > 0) {
+			for (int i = 0; i < args.length; i++) {
+				System.out.println("args[" + i + "] = " + args[i] );
 			}
-
-			if (isPrimeNum)
-				total = total + num;
-			else
-				System.out.println(num);
 		}
-		System.out.println(total);
+		
+		int total = 0;
+		
+		for (int num = 2; num <= 100; num++) {
+			
+			if (isPrime(num))
+				total += num;
+			primeList.add(num);
+		}
+		
+		System.out.println("Total is " + total);
+		
+	}
+	
+	private static ArrayList<Integer> primeList = new ArrayList<>();
+	
+	private static boolean isPrime(int num) {
+//		for (int j = 2; j < num; j++) {
+		for (Integer j : primeList) {	
+			if (num % j == 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 }

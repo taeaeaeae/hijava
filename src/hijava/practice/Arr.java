@@ -1,5 +1,7 @@
 package hijava.practice;
 
+import hijava.oop.Mom;
+
 public class Arr {
 
 	public static void main(String[] args) {
@@ -7,8 +9,15 @@ public class Arr {
 //		ex2();
 //		ex3();
 //		ex4();
-		ex5();
+//		ex5();
 
+		Mom mom = new Mom("영자");
+		mom.say();
+		Mom.son = new Son("길동");
+		son.say();
+		
+		System.out.println(son.getName());
+		
 	}
 
 	private static void ex5() {
