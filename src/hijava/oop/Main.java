@@ -8,8 +8,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		netsport();
-		//		animal();
+//		netsport();
+//				animal();
 //		weight();
 		
 //		AbstSuper sp = new AbstChild();
@@ -25,6 +25,34 @@ public class Main {
 //		drinkTest();
 //		eatTest();
 //		koreanAndAmerican();
+//		testinterface();
+		
+		total();
+
+	}
+	
+	privat static void total() {
+		int[] arr = new int[] { 1, 2, 5, 9};
+		SubTotal st = new SubTotal();
+		System.out.println("Total=" + st.sum(arr));
+	}
+	
+	private static void testinterface() throws SQLException, IOException {
+		TestInterface ti = new TestImpl();
+		ti.select("select * from Table");
+		TestInterface.out(100);
+		
+		Dog.eat("Meat");
+	}
+
+	private static void calculator() {
+		Calculator calc = new CalculatorImpl();
+		int x = 10, y = 5;
+		calc.add(x, y);
+		calc.div(x, y);
+		calc.div(x, 0);
+	}
+		
 	}
 	
 	private static void netsport() {
